@@ -1,3 +1,13 @@
+type Crew = {
+  name: string;
+  images: {
+    png: string;
+    webp: string;
+  };
+  role: string;
+  bio: string;
+}
+
 const crew = [
 {
       "name": "Douglas Hurley",
