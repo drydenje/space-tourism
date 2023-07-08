@@ -6,13 +6,16 @@ const NavBar = () => {
     <nav className={styles.nav}>
       <ul>
         {[
-          ["Home", "/"],
-          ["Destination", "/destination"],
-          ["Crew", "/crew"],
-          ["Technology", "/technology"],
-        ].map(([title, url]) => (
+          ["00", "Home", "/"],
+          ["01", "Destination", "/destination"],
+          ["02", "Crew", "/crew"],
+          ["03", "Technology", "/technology"],
+        ].map(([num, title, url]) => (
           <li key={title}>
-            <Link href={url}>{title}</Link>
+            <Link href={url}>
+              <span className="number">{num}</span>
+              {title}
+            </Link>
           </li>
         ))}
       </ul>
