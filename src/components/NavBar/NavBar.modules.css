@@ -1,7 +1,24 @@
 nav {
+  /* font-size: 125%; */
+  font-size: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+li {
+  margin: 0 0.5rem;
+}
+
+nav ul li a .num {
   border: 1px solid blue;
 }
 
-.number {
-  margin: 0 1rem;
+nav ul li a span {
+/* nav ul li .number { */
+  color: red;
+  margin: 0 0.5rem;
 }

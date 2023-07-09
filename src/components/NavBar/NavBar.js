@@ -13,7 +13,7 @@ const NavBar = () => {
         ].map(([num, title, url]) => (
           <li key={title}>
             <Link href={url}>
-              <span className="number">{num}</span>
+              <span className="num">{num}</span>
               {title}
             </Link>
           </li>
