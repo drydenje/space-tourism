@@ -6,14 +6,14 @@ const NavBar = () => {
   return (
     <nav className="flex flex-row items-center justify-between p-4 text-sm">
       <Image className="" src={Logo} alt="Space tourism logo" />
-      <ul className="flex flex-row justify-end">
+      <ul className="flex flex-row justify-end bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500">
         {[
           ["00", "Home", "/"],
           ["01", "Destination", "/destination"],
           ["02", "Crew", "/crew"],
           ["03", "Technology", "/technology"],
         ].map(([num, title, url]) => (
-          <li className="my-0 mx-2" key={title}>
+          <li className="my-0 mx-2 uppercase" key={title}>
             <Link href={url}>
               <span className="my-0 mx-2">{num}</span>
               {title}
