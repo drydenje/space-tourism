@@ -1,15 +1,4 @@
-type Destination = {
-  name: string;
-  images: {
-    png: string;
-    webp: string;
-  };
-  description: string;
-  distance: string;
-  travel: string;
-}
-
-const destinations = [
+[
   {
     "name": "Moon",
     "images": {
@@ -50,6 +39,4 @@ const destinations = [
     "distance": "1.6 bil. km",
     "travel": "7 years"
   }
-];
-
-  export default destinations;
+]

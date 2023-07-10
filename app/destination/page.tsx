@@ -1,10 +1,34 @@
-export default function Home() {
+import DestinationPicker from '@/components/DestinationPicker';
+
+// type Destination = {
+//   name: string;
+//   images: {
+//     png: string;
+//     webp: string;
+//   };
+//   description: string;
+//   distance: string;
+//   travel: string;
+// }
+
+export default async function Home() {
+  const data = await getData();
+  console.log(data);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Destination</h1>
-      <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!</p>
+    <main className="">
+      <h1>01 Pick your destination</h1>
+      <DestinationPicker destinations={data} />
     </main>
   )
+}
+
+async function getData() {
+  const res = await fetch('http://localhost:3000/destinations.json');
+
+  if(!res.ok) {
+    throw new Error('Failed to fetch destination data');
   }
+
+  return res.json();
+}
