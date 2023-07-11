@@ -26,12 +26,12 @@ const DestinationPicker = ({destinations}: Destination[] ) => {
           <ul className="flex flew-row">
           {
             destinationNames.map(name => {
-              return <li key={name}>{name}</li>
+              return <li className="uppercase" key={name}>{name}</li>
             })
           }
           </ul>
         </nav>
-        <h2>{name}</h2>
+        <h2 className="uppercase">{name}</h2>
         <div>{description}</div>
         <div className="flex flex-1 flex-row">
           <div className="grow">
