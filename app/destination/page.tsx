@@ -1,4 +1,5 @@
 import DestinationPicker from '@/components/DestinationPicker';
+import data from '@/data/destinations';
 
 // type Destination = {
 //   name: string;
@@ -11,24 +12,26 @@ import DestinationPicker from '@/components/DestinationPicker';
 //   travel: string;
 // }
 
-export default async function Home() {
-  const data = await getData();
-  console.log(data);
+export default function Home() {
+  // const data = await getData();
+  // console.log(data[0].images);
 
   return (
-    <main className="">
+    <div>
       <h1>01 Pick your destination</h1>
-      <DestinationPicker destinations={data} />
-    </main>
+      { data && 
+        <DestinationPicker destinations={data} />
+      }
+    </div>
   )
 }
 
-async function getData() {
-  const res = await fetch('http://localhost:3000/destinations.json');
+// async function getData() {
+//   const res = await fetch('http://localhost:3000/destinations.json');
 
-  if(!res.ok) {
-    throw new Error('Failed to fetch destination data');
-  }
+//   if(!res.ok) {
+//     throw new Error('Failed to fetch destination data');
+//   }
 
-  return res.json();
-}
+//   return res.json();
+// }
