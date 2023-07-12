@@ -5,19 +5,19 @@ import NavBar from "@/components/NavBar";
 const barlow = Barlow({
   subsets: ["latin"],
   display: "swap",
-  weight: "100",
+  weight: ["100","200"],
   variable: "--font-barlow",
 });
 const barlow_condensed = Barlow_Condensed({
   subsets: ["latin"],
   display: "swap",
-  weight: "100",
+  weight: ["100", "200"],
   variable: "--font-barlow-condensed",
 });
 const bellefair = Bellefair({
   subsets: ["latin"],
   display: "swap",
-  weight: "400",
+  weight: ["400"],
   variable: "--font-bellefair",
 });
 

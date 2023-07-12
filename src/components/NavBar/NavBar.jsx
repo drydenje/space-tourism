@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className="flex flex-row items-center justify-between p-4 text-sm">
       <Image className="" src={Logo} alt="Space tourism logo" />
-      <ul className="flex flex-row justify-end bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500">
+      <ul className="flex flex-row justify-end backdrop-blur">
         {[
           ["00", "Home", "/"],
           ["01", "Destination", "/destination"],

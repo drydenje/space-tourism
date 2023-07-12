@@ -26,21 +26,21 @@ const DestinationPicker = ({destinations}: Destination[] ) => {
           <ul className="flex flew-row">
           {
             destinationNames.map(name => {
-              return <li className="uppercase" key={name}>{name}</li>
+              return <li className="font-sansCondensed text-xs uppercase" key={name}>{name}</li>
             })
           }
           </ul>
         </nav>
-        <h2 className="text-xl font-serif uppercase">{name}</h2>
-        <div className="font-sans">{description}</div>
+        <h2 className="font-serif text-7xl uppercase">{name}</h2>
+        <div className="font-sans text-sm">{description}</div>
         <div className="flex flex-1 flex-row">
           <div className="grow">
-            <div className="font-sansCondensed">Avg. Distance</div>
-            <div>{distance}</div>
+            <div className="font-sansCondensed text-xs uppercase">Avg. Distance</div>
+            <div className="font-serif text-2xl uppercase">{distance}</div>
           </div>
           <div className="grow">
-            <div className="font-sansCondensed">Est. Travel Time</div>
-            <div>{travel}</div>
+            <div className="font-sansCondensed text-xs uppercase">Est. Travel Time</div>
+            <div className="font-serif text-2xl uppercase">{travel}</div>
           </div>
         </div>
       </aside>
