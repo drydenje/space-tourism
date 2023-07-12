@@ -31,15 +31,15 @@ const DestinationPicker = ({destinations}: Destination[] ) => {
           }
           </ul>
         </nav>
-        <h2 className="uppercase">{name}</h2>
-        <div>{description}</div>
+        <h2 className="text-xl font-serif uppercase">{name}</h2>
+        <div className="font-sans">{description}</div>
         <div className="flex flex-1 flex-row">
           <div className="grow">
-            <div>Avg. Distance</div>
+            <div className="font-sansCondensed">Avg. Distance</div>
             <div>{distance}</div>
           </div>
           <div className="grow">
-            <div>Est. Travel Time</div>
+            <div className="font-sansCondensed">Est. Travel Time</div>
             <div>{travel}</div>
           </div>
         </div>
