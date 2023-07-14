@@ -1,4 +1,5 @@
 import DestinationPicker from '@/components/DestinationPicker';
+import NavBar from '@/src/components/NavBar/NavBar';
 import data from '@/data/destinations';
 
 // type Destination = {
@@ -15,11 +16,14 @@ import data from '@/data/destinations';
 export default function Home() {
 
   return (
-    <div>
-      <h1 className="uppercase"><span className="grey">01</span> Pick your destination</h1>
-      { data && 
-        <DestinationPicker destinations={data} />
-      }
+    <div className="bg-destination-desktop cover">
+      <NavBar />
+      <main>
+        <h1 className="uppercase"><span className="grey">01</span> Pick your destination</h1>
+        { data && 
+          <DestinationPicker destinations={data} />
+        }
+      </main>
     </div>
   )
 }

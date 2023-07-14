@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "crew-desktop": "url('/assets/crew/background-crew-desktop.jpg')",
+        "destination-desktop":
+          "url('/assets/destination/background-destination-desktop.jpg')",
       },
       fontFamily: {
         sans: ["var(--font-barlow)"],
