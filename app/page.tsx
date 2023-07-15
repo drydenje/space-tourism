@@ -4,7 +4,7 @@ import NavBar from "@/src/components/NavBar/NavBar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-destination-desktop">
+    <div className="h-screen bg-home-desktop bg-cover bg-right">
       <NavBar />
       <main>
         <div>

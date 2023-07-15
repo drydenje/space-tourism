@@ -11,6 +11,7 @@ module.exports = {
         "crew-desktop": "url('/assets/crew/background-crew-desktop.jpg')",
         "destination-desktop":
           "url('/assets/destination/background-destination-desktop.jpg')",
+        "home-desktop": "url('/assets/home/background-home-desktop.jpg')",
       },
       fontFamily: {
         sans: ["var(--font-barlow)"],
