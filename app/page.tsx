@@ -4,7 +4,7 @@ import NavBar from "@/src/components/NavBar/NavBar";
 
 export default function Home() {
   return (
-    <div className="h-screen bg-home-desktop bg-cover bg-right">
+    <div className="h-screen bg-home-desktop bg-cover bg-right bg-no-repeat">
       <NavBar />
       <main>
         <div>
@@ -14,8 +14,8 @@ export default function Home() {
             because we’ll give you a truly out of this world experience!
           </p>
         </div>
-        <div>
-          <Link href="./destination">Explore</Link>
+        <div className="h-64 w-64 text-center self-center bg-white place-content-center rounded-full inline-block">
+          <Link href="./destination" className="text-black font-serif text-3xl uppercase">Explore</Link>
         </div>
       </main>
     </div>
