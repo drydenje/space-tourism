@@ -18,7 +18,19 @@ module.exports = {
         sansCondensed: ["var(--font-barlow-condensed)"],
         serif: ["var(--font-bellefair)"],
       },
+      gridTemplateAreas: {
+        home: [
+          ".  .  .  .",
+          "nav  nav  nav  nav",
+          ".  .  .  .",
+          ". content button .",
+          ".  .  .  .",
+        ],
+      },
+      variants: {
+        gridTemplateAreas: ["responsive"],
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@savvywombat/tailwindcss-grid-areas")],
 };
