@@ -27,6 +27,12 @@ module.exports = {
           ".  .  .  .",
         ],
       },
+      phone: [
+        ".  .   .   .",
+        "nav  nav   nav   nav",
+        ".  .   .   .",
+        "content content content content",
+      ],
       variants: {
         gridTemplateAreas: ["responsive"],
       },
