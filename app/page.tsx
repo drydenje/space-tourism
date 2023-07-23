@@ -15,7 +15,7 @@ export default function Home() {
           because we’ll give you a truly out of this world experience!
         </p>
       </main>
-      <aside className="grid-in-button">
+      <aside className="grid-in-button justify-end self-end">
         <div className="w-[274px] h-[274px] flex text-center items-center bg-white place-content-center rounded-full">
           <Link href="./destination" className="text-black font-serif text-[32px] uppercase">Explore</Link>
         </div>
