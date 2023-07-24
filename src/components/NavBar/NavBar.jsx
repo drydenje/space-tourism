@@ -15,7 +15,7 @@ const NavBar = () => {
           ["03", "Technology", "/technology"],
         ].map(([num, title, url]) => (
           <li
-            className="my-0 mx-0 uppercase font-sansCondensed text-base font-normal mx-5"
+            className="my-0 mx-0 uppercase font-sansCondensed text-base font-normal"
             key={title}
           >
             <Link href={url}>
