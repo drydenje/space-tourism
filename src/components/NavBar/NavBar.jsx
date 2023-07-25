@@ -1,11 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-// import Logo from "../../../public/assets/shared/logo.svg";
 import Logo from "@/assets/shared/logo.svg";
 
 const NavBar = () => {
   return (
-    <nav className="grid-in-nav flex flex-row items-center justify-between p-4 text-sm h-32">
+    <nav className="col-span-2 flex flex-row items-center justify-between p-4 text-sm h-32">
       <Image className="" src={Logo} alt="Space tourism logo w-48 h-48" />
       <ul className="flex flex-row justify-end backdrop-blur items-center h-24">
         {[
