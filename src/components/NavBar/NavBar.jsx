@@ -4,10 +4,10 @@ import Logo from "@/assets/shared/logo.svg";
 
 const NavBar = () => {
   return (
-    <nav className="flex flex-row items-center justify-between p-4 text-sm h-32">
+    <nav className="flex flex-row items-center justify-between p-4 text-sm h-32 pr-0">
       <Image className="" src={Logo} alt="Space tourism logo w-48 h-48" />
-      <hr className="w-[50%]" />
-      <ul className="flex flex-row justify-end backdrop-blur items-center h-24">
+      <hr className="w-[20%]" />
+      <ul className="flex flex-row justify-around backdrop-blur-3xl tracking-widest items-center h-24 w-[55%]">
         {[
           ["00", "Home", "/"],
           ["01", "Destination", "/destination"],
