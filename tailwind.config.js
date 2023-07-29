@@ -13,6 +13,9 @@ module.exports = {
           "url('/assets/destination/background-destination-desktop.jpg')",
         "home-desktop": "url('/assets/home/background-home-desktop.jpg')",
       },
+      colors: {
+        "space-content": "#D0D6F9",
+      },
       fontFamily: {
         sans: ["var(--font-barlow)"],
         sansCondensed: ["var(--font-barlow-condensed)"],

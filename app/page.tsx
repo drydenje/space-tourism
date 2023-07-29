@@ -9,8 +9,8 @@ export default function Home() {
       
       <div className="flex justify-around items-end mb-28">
         <main className="max-w-[450px]">
-          <h1 className="text-3xl uppercase font-sansCondensed">So, you want to travel to <span className="font-serif text-[150px] block my-16">Space</span></h1>
-          <p className="font-sans text-lg">Let’s face it; if you want to go to space, you might as well genuinely go to 
+          <h1 className="text-3xl uppercase font-sansCondensed text-space-content">So, you want to travel to <span className="font-serif text-[150px] text-white block my-16">Space</span></h1>
+          <p className="font-sans text-lg text-space-content">Let’s face it; if you want to go to space, you might as well genuinely go to 
             outer space and not hover kind of on the edge of it. Well sit back, and relax 
             because we’ll give you a truly out of this world experience!
           </p>
