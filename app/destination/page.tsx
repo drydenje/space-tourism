@@ -2,21 +2,21 @@ import DestinationPicker from '@/components/DestinationPicker';
 import NavBar from '@/src/components/NavBar/NavBar';
 import data from '@/data/destinations';
 
-// type Destination = {
-//   name: string;
-//   images: {
-//     png: string;
-//     webp: string;
-//   };
-//   description: string;
-//   distance: string;
-//   travel: string;
-// }
+type Destination = {
+  name: string;
+  images: {
+    png: string;
+    webp: string;
+  };
+  description: string;
+  distance: string;
+  travel: string;
+}
 
 export default function Home() {
 
   return (
-    <div className="bg-destination-desktop cover">
+    <div className="h-screen w-screen bg-no-repeat bg-destination-mobile">
       <NavBar />
       <main>
         <h1 className="uppercase"><span className="grey">01</span> Pick your destination</h1>

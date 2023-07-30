@@ -11,6 +11,10 @@ module.exports = {
         "crew-desktop": "url('/assets/crew/background-crew-desktop.jpg')",
         "destination-desktop":
           "url('/assets/destination/background-destination-desktop.jpg')",
+        "destination-tablet":
+          "url('/assets/destination/background-destination-tablet.jpg')",
+        "destination-mobile":
+          "url('/assets/destination/background-destination-mobile.jpg')",
         "home-desktop": "url('/assets/home/background-home-desktop.jpg')",
       },
       colors: {
