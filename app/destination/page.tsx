@@ -16,7 +16,10 @@ type Destination = {
 export default function Home() {
 
   return (
-    <div className="h-screen w-screen bg-no-repeat bg-destination-mobile">
+    <div className="h-screen w-screen bg-no-repeat 
+      bg-destination-mobile
+      md:bg-destination-tablet
+      lg:bg-destination-desktop">
       <NavBar />
       <main>
         <h1 className="uppercase"><span className="grey">01</span> Pick your destination</h1>

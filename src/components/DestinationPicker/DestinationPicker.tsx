@@ -20,7 +20,7 @@ const DestinationPicker = ({destinations}: Destination[] ) => {
 
   return (
     <div className="flex flex-row">
-      <Image src={images.webp} alt="planet" width={170} height={170}/>
+      <Image src={images.webp} alt="planet" width={300} height={300}/>
       <aside className="grow">
         <nav>
           <ul className="flex flew-row">

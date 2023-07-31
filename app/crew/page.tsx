@@ -1,9 +1,12 @@
 import NavBar from '@/src/components/NavBar';
-import data from '@/data/crew';
+import FetchGraphQL from '@/data/FetchGraphQL';
+// import data from '@/data/crew';
 
 
 export default async function Home() {
-  console.log(data);
+  const data = await FetchGraphQL(query);
+  console.log('-----------')
+  console.log(data.data.crewCollection);
 
   return (
     <div className="bg-crew-desktop cover">
@@ -14,3 +17,13 @@ export default async function Home() {
     </div>
   )
 }
+
+const query = `query {
+  crewCollection {
+    items {
+      name
+      role
+      bio
+    }
+  }
+}`;
