@@ -15,7 +15,7 @@ const FetchGraphQL = async (
   const results = await fetch(host, opts)
     .then((res) => res.json())
     .catch(console.error);
-  return results;
+  return results.data;
 };
 
 export default FetchGraphQL;
