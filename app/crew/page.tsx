@@ -6,7 +6,6 @@ import FetchGraphQL from '@/data/FetchGraphQL';
 export default async function Home() {
   const { crewCollection } = await FetchGraphQL(query);
   const crew = crewCollection.items;
-  console.log('-----------')
   console.log(crew[0]);
 
   return (
