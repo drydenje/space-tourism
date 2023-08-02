@@ -1,19 +1,24 @@
 import DestinationPicker from '@/components/DestinationPicker';
 import NavBar from '@/src/components/NavBar/NavBar';
-import data from '@/data/destinations';
+import FetchGraphQL from '@/data/FetchGraphQL';
+// import data from '@/data/destinations';
 
-type Destination = {
-  name: string;
-  images: {
-    png: string;
-    webp: string;
-  };
-  description: string;
-  distance: string;
-  travel: string;
-}
 
-export default function Home() {
+// type Destination = {
+//   name: string;
+//   images: {
+//     png: string;
+//     webp: string;
+//   };
+//   description: string;
+//   distance: string;
+//   travel: string;
+// }
+
+export default async function Home() {
+  const { destinationsCollection } = await FetchGraphQL(query);
+  const destinations = destinationsCollection.items;
+  // console.log(destinations);
 
   return (
     <div className="h-screen w-screen bg-no-repeat 
@@ -23,10 +28,22 @@ export default function Home() {
       <NavBar />
       <main>
         <h1 className="uppercase"><span className="grey">01</span> Pick your destination</h1>
-        { data && 
-          <DestinationPicker destinations={data} />
+        { destinations && 
+          <DestinationPicker destinations={destinations} />
         }
       </main>
     </div>
   )
 }
+
+const query = `query {
+  destinationsCollection {
+    items {
+      name
+      description
+      distance
+      travel
+    }
+  }
+}
+`
