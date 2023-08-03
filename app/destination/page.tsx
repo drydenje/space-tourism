@@ -40,6 +40,18 @@ const query = `query {
   destinationsCollection {
     items {
       name
+      imagesCollection {
+				items {
+				  title
+				  description
+				  contentType
+				  fileName
+				  size
+				  url
+				  width
+				  height
+				}
+      }
       description
       distance
       travel

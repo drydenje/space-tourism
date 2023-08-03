@@ -13,7 +13,11 @@ type Destination = {
 
 const DestinationPicker = ({destinations}: Destination[] ) => {
 
-  const { name, images, description, distance, travel } = destinations[0];
+  const { name, imagesCollection, description, distance, travel } = destinations[0];
+  const image = imagesCollection.items[1];
+  // const image = imagesCollection;
+  console.log('image:', image)
+
   const destinationNames = destinations.map(dest => {
     return dest.name;
   });
