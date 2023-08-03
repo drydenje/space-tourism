@@ -15,7 +15,6 @@ const DestinationPicker = ({destinations}: Destination[] ) => {
 
   const { name, imagesCollection, description, distance, travel } = destinations[0];
   const image = imagesCollection.items[1];
-  // const image = imagesCollection;
   console.log('image:', image)
 
   const destinationNames = destinations.map(dest => {
@@ -25,6 +24,7 @@ const DestinationPicker = ({destinations}: Destination[] ) => {
   return (
     <div className="flex flex-row">
       {/* <Image src={images.webp} alt="planet" width={300} height={300}/> */}
+      <Image src={`${image.url}`} alt="planet" width={`${image.width}`} height={`${image.height}`}/>
       <aside className="grow">
         <nav>
           <ul className="flex flew-row">
