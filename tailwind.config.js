@@ -16,6 +16,12 @@ module.exports = {
         "destination-mobile":
           "url('/assets/destination/background-destination-mobile.jpg')",
         "home-desktop": "url('/assets/home/background-home-desktop.jpg')",
+        "technology-desktop":
+          "url('/assets/technology/background-technology-desktop.jpg')",
+        "technology-tablet":
+          "url('/assets/technology/background-technology-tablet.jpg')",
+        "technology-mobile":
+          "url('/assets/technology/background-technology-mobile.jpg')",
       },
       colors: {
         "space-content": "#D0D6F9",

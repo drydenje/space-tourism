@@ -6,7 +6,7 @@ import FetchGraphQL from '@/data/FetchGraphQL';
 export default async function Home() {
   const { crewCollection } = await FetchGraphQL(query);
   const crew = crewCollection.items;
-  console.log(crew[0]);
+  // console.log(crew[0]);
 
   return (
     <div className="bg-crew-desktop cover">

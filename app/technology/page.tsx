@@ -1,21 +1,42 @@
+import NavBar from '@/src/components/NavBar';
+import FetchGraphQL from '@/src/data/FetchGraphQL';
 
 export default async function Home() {
-  // const data = await getData();
-  // console.log(data);
+  const { technologyCollection } = await FetchGraphQL(query);
+  // console.log('technologyCollection:', technologyCollection)
+  const technology = technologyCollection.items;
+  // console.log('technology:', technology);
+  const images = technology[0].imagesCollection.items;
+  // console.log('images:', images)
+
 
   return (
-    <main className="">
-      <h1>02 Space launch 101</h1>
-    </main>
+    <div className="grid h-screen bg-technology-desktop bg-cover bg-no-repeat">
+      <NavBar />
+      <main className="">
+        <h1>02 Space launch 101</h1>
+      </main>
+    </div>
   )
 }
 
-async function getData() {
-  const res = await fetch('http://localhost:3000/destinations.json');
-
-  if(!res.ok) {
-    throw new Error('Failed to fetch destination data');
+const query = `query {
+  technologyCollection {
+    items {
+      name
+      imagesCollection {
+        items {
+          title
+          description
+          contentType
+          fileName
+          size
+          url
+          width
+          height
+        }
+      }
+      description
+    }
   }
-
-  return res.json();
-}
+}`
