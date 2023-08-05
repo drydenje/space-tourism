@@ -39,6 +39,28 @@ module.exports = {
           ". content button .",
           ".  .  .  .",
         ],
+        desktop: [".  .   .   .", ".  .   .   .", ".  .   .   ."],
+        tablet: [".  .   .   .", ".  .   .   .", ".  .   .   ."],
+        mobile: [".  .   .   .", ".  .   .   .", ".  .   .   ."],
+      },
+      gridTemplateColumns: {
+        mobile: "1fr 1fr 1fr",
+        tablet: "1fr 1fr 1fr",
+        desktop: "1fr 1fr 1fr",
+      },
+      gridTemplateRows: {
+        mobile: ` auto
+                    1fr
+                    1fr
+                  `,
+        tablet: ` auto
+                    1fr
+                    1fr
+                  `,
+        desktop: ` auto
+                    1fr
+                    1fr
+                  `,
       },
       phone: [
         ".  .   .   .",
