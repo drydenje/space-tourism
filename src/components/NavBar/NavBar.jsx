@@ -5,7 +5,7 @@ import Logo from "@/assets/shared/logo.svg";
 const NavBar = () => {
   return (
     <nav
-      className="flex flex-row items-center justify-between p-4 text-sm 
+      className="grid-in-nav flex flex-row items-center justify-between p-4 text-sm 
        pr-0"
     >
       <Image className="" src={Logo} alt="Space tourism logo w-48 h-48" />

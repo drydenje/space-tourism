@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import NavBar from "@/src/components/NavBar/NavBar";
 
-
 export default function Home() {
   return (
+    // <div className="grid h-screen bg-home-desktop bg-cover bg-right bg-no-repeat">
     <div className="grid h-screen bg-home-desktop bg-cover bg-right bg-no-repeat">
       <NavBar />
       

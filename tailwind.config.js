@@ -39,14 +39,14 @@ module.exports = {
           ". content button .",
           ".  .  .  .",
         ],
-        desktop: [".  .   .   .", ".  .   .   .", ".  .   .   ."],
-        tablet: [".  .   .   .", ".  .   .   .", ".  .   .   ."],
         mobile: [".  .   .   .", ".  .   .   .", ".  .   .   ."],
+        tablet: [".  .   .   .", ".  .   .   .", ".  .   .   ."],
+        desktop: ["nav nav", "content visual"],
       },
       gridTemplateColumns: {
         mobile: "1fr 1fr 1fr",
         tablet: "1fr 1fr 1fr",
-        desktop: "1fr 1fr 1fr",
+        desktop: "1fr 1fr",
       },
       gridTemplateRows: {
         mobile: ` auto
@@ -57,19 +57,9 @@ module.exports = {
                     1fr
                     1fr
                   `,
-        desktop: ` auto
-                    1fr
-                    1fr
+        desktop: `96px
+                  auto
                   `,
-      },
-      phone: [
-        ".  .   .   .",
-        "nav  nav   nav   nav",
-        ".  .   .   .",
-        "content content content content",
-      ],
-      variants: {
-        gridTemplateAreas: ["responsive"],
       },
     },
   },
