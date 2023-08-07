@@ -32,13 +32,6 @@ module.exports = {
         serif: ["var(--font-bellefair)"],
       },
       gridTemplateAreas: {
-        home: [
-          ".  .  .  .",
-          "nav  nav  nav  nav",
-          ".  .  .  .",
-          ". content button .",
-          ".  .  .  .",
-        ],
         mobile: [".  .   .   .", ".  .   .   .", ".  .   .   ."],
         tablet: [".  .   .   .", ".  .   .   .", ".  .   .   ."],
         desktop: ["nav nav", "content visual"],
