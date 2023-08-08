@@ -11,7 +11,7 @@ export default async function Home() {
 
 
   return (
-    <div className="grid grid-areas-desktop grid-cols-desktop grid-rows-desktop h-screen bg-technology-desktop bg-cover bg-no-repeat">
+    <div className="grid grid-areas-desktop grid-cols-desktop grid-rows-desktop h-screen bg-technology-mobile md:bg-technology-tablet lg:bg-technology-desktop bg-cover bg-no-repeat">
       <NavBar />
       <main className="grid-in-content">
         <h1>02 Space launch 101</h1>
