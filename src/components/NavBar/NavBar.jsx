@@ -1,14 +1,26 @@
 import Link from "next/link";
 import Image from "next/image";
+import FetchGraphQL from "@/src/data/FetchGraphQL";
 import Logo from "@/assets/shared/logo.svg";
 
-const NavBar = () => {
+export default async function NavBar() {
+  const { sharedCollection } = await FetchGraphQL(query);
+  const images = sharedCollection.items.reduce(
+    (obj, item) => ({
+      ...obj,
+      [item.name]: item.image,
+    }),
+    {}
+  );
+
+  console.log("images:", images);
+
   return (
     <nav
       className="grid-in-nav flex flex-row items-center justify-between p-4 text-sm 
        pr-0"
     >
-      <Image className="" src={Logo} alt="Space tourism logo w-48 h-48" />
+      <Image className="w-48 h-48" src={Logo} alt="Space tourism logo" />
       <hr className="w-[20%]" />
       <ul className="flex flex-row justify-around backdrop-blur-3xl tracking-widest items-center w-[55%] h-[60px]">
         {[
@@ -30,6 +42,22 @@ const NavBar = () => {
       </ul>
     </nav>
   );
-};
+}
 
-export default NavBar;
+const query = `query {
+  sharedCollection {
+    items {
+      name
+      image {
+        title
+        description
+        contentType
+        fileName
+        size
+        url
+        width
+        height
+      }
+    }
+  }
+}`;
