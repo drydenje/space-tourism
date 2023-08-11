@@ -12,19 +12,14 @@ export default async function NavBar() {
     {}
   );
 
-  console.log("images:", images);
-
   return (
     <nav
       className="grid-in-nav flex flex-row items-center justify-between p-4 text-sm 
        pr-0"
     >
       <Image
-        // className="w-48 h-48"
         src={images["Logo"].url}
         alt="Space tourism logo"
-        // width={12}
-        // height={12}
         width={images["Logo"].width}
         height={images["Logo"].height}
       />
